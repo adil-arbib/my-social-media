@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">my social media</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="singup">SingUp</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full name</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm_password</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="search">Search…</string>
+    <string name="what_s_on_your_mind">What\'s on your mind?</string>
+    <string name="now">now</string>
+    <string name="post">Post</string>
+    <string name="loading">loading…</string>
+</resources>
