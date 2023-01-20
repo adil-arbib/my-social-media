@@ -18,6 +18,15 @@ public class User implements Parcelable {
     private String birthday;
     private String picture;
     private Role role;
+    private boolean following;
+
+    public boolean isFollowing() {
+        return following;
+    }
+
+    public void setFollowing(boolean following) {
+        this.following = following;
+    }
 
     public User(Long id, String firstName,
                 String lastName, String email,

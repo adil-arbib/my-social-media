@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">my social media</string>
+    <string name="app_name">BrandName</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
@@ -15,4 +15,14 @@
     <string name="now">now</string>
     <string name="post">Post</string>
     <string name="loading">loading…</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="birthday">Birthday</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="profile_is_p_completed">profile is p% completed</string>
+    <string name="posts">Posts</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="create_post">Create post</string>
 </resources>

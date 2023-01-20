@@ -28,7 +28,7 @@ android {
     }
 
 
-    dataBinding {
+    viewBinding {
         enabled true
     }
 }
@@ -40,7 +40,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'de.hdodenhof:circleimageview:3.1.0' // circular image view for profile picture
     implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.9.0' //retrofit2
     implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.9.0' // gson converter
@@ -53,4 +53,7 @@ dependencies {
     // lombok
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 }

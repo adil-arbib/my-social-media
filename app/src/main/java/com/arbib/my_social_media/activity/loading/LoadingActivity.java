@@ -13,6 +13,9 @@ import com.arbib.my_social_media.activity.main.MainActivity;
 import com.arbib.my_social_media.api.UserApi;
 import com.arbib.my_social_media.model.User;
 import com.arbib.my_social_media.service.RetrofitService;
+import com.arbib.my_social_media.utils.Constants;
+import com.arbib.my_social_media.utils.UserSingleton;
+import com.google.gson.Gson;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -32,36 +35,23 @@ public class LoadingActivity extends AppCompatActivity {
 
 
     private void checkLogin() {
-        SharedPreferences sp =this.getSharedPreferences("Login", MODE_PRIVATE);
+        SharedPreferences sp =this.getSharedPreferences("pref", MODE_PRIVATE);
 
-        Long id = sp.getLong("id", -1);
+        Gson gson = new Gson();
+        String json = sp.getString(Constants.CURRENT_USER, null);
+        User user = gson.fromJson(json, User.class);
 
         Intent intent;
 
-        if(id == -1) {
+        if(user == null) {
             intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
-            finish();
+
         }else {
             intent = new Intent(this, MainActivity.class);
-            Retrofit retrofit = RetrofitService.getRetrofit();
-            UserApi userApi = retrofit.create(UserApi.class);
-            userApi.getUser(id).enqueue(new Callback<User>() {
-                @Override
-                public void onResponse(Call<User> call, Response<User> response) {
-                    if(response.code() == 200) {
-                        intent.putExtra("currentUser", response.body());
-                        startActivity(intent);
-                        finish();
-                    }
-                }
-
-                @Override
-                public void onFailure(Call<User> call, Throwable t) {
-
-                }
-            });
+            UserSingleton.setUser(user);
         }
+        startActivity(intent);
+        finish();
 
     }
 }

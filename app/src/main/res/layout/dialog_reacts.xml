@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:elevation="10dp"
+    android:background="@drawable/white_bg_radius"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/dg_love"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/love" />
+
+    <ImageView
+        android:id="@+id/dg_haha"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="6dp"
+        android:src="@drawable/haha" />
+
+    <ImageView
+        android:id="@+id/dg_wow"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="6dp"
+        android:src="@drawable/wow" />
+
+    <ImageView
+        android:id="@+id/dg_sad"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="6dp"
+        android:src="@drawable/sad" />
+
+    <ImageView
+        android:id="@+id/dg_angry"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="6dp"
+        android:src="@drawable/angry"
+        android:layout_marginEnd="10dp"/>
+
+</LinearLayout>

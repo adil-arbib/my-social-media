@@ -2,14 +2,14 @@ package com.arbib.my_social_media.dto;
 
 import java.util.Date;
 
-public class RegisterUser {
+public class RegisterDto {
     private String firstName;
     private String lastName;
     private String email;
     private String password;
-    private Date birthday;
+    private String birthday;
 
-    public RegisterUser(String firstName, String lastName, String email, String password, Date birthday) {
+    public RegisterDto(String firstName, String lastName, String email, String password, String birthday) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -49,11 +49,11 @@ public class RegisterUser {
         this.password = password;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 }
